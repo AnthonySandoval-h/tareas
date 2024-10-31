@@ -1,0 +1,105 @@
+// 1. Algoritmo para comparar tres valores
+Algoritmo CompararTresNumeros
+    Definir A, B, C Como Real
+    
+    Escribir "Ingrese el valor de A: "
+    Leer A
+    Escribir "Ingrese el valor de B: "
+    Leer B
+    Escribir "Ingrese el valor de C: "
+    Leer C
+    
+    Si A = B O B = C O A = C Entonces
+        Escribir "Error: Los valores deben ser diferentes"
+    Sino
+        // Encontrar el mayor
+        Si A > B Y A > C Entonces
+            Escribir "El mayor es: ", A
+        Sino 
+            Si B > A Y B > C Entonces
+                Escribir "El mayor es: ", B
+            Sino
+                Escribir "El mayor es: ", C
+            FinSi
+        FinSi
+        
+        // Encontrar el menor
+        Si A < B Y A < C Entonces
+            Escribir "El menor es: ", A
+        Sino 
+            Si B < A Y B < C Entonces
+                Escribir "El menor es: ", B
+            Sino
+                Escribir "El menor es: ", C
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
+
+// 2. Algoritmo para sumar números del 1 al 10
+Algoritmo SumatoriaUnoADiez
+    Definir suma, i Como Entero
+    suma <- 0
+    
+    Para i <- 1 Hasta 10 Hacer
+        suma <- suma + i
+    FinPara
+    
+    Escribir "La sumatoria de los números del 1 al 10 es: ", suma
+FinAlgoritmo
+
+// 3. Algoritmo para sumar múltiplos de 5 hasta 100
+Algoritmo SumaMultiplosCinco
+    Definir suma, i Como Entero
+    suma <- 0
+    
+    Para i <- 5 Hasta 100 Con Paso 5 Hacer
+        Escribir i
+        suma <- suma + i
+    FinPara
+    
+    Escribir "La sumatoria de los múltiplos de 5 hasta 100 es: ", suma
+FinAlgoritmo
+
+// 4. Algoritmo para convertir calificaciones numéricas
+Algoritmo ConvertirCalificaciones
+    Definir nota Como Entero
+    Definir letra Como Caracter
+    
+    Escribir "Ingrese la calificación (1-20): "
+    Leer nota
+    
+    Si nota >= 1 Y nota <= 20 Entonces
+        Si nota >= 19 Entonces
+            letra <- "A"
+        Sino
+            Si nota >= 16 Entonces
+                letra <- "B"
+            Sino
+                Si nota >= 13 Entonces
+                    letra <- "C"
+                Sino
+                    Si nota >= 10 Entonces
+                        letra <- "D"
+                    Sino
+                        letra <- "E"
+                    FinSi
+                FinSi
+            FinSi
+        FinSi
+        Escribir "La calificación ", nota, " equivale a: ", letra
+    Sino
+        Escribir "Error: La nota debe estar entre 1 y 20"
+    FinSi
+FinAlgoritmo
+
+// 5. Algoritmo para escribir números del 1 al 100 usando Mientras
+Algoritmo NumerosNaturales
+    Definir contador Como Entero
+    contador <- 1
+    
+    Mientras contador <= 100 Hacer
+        Escribir contador
+        contador <- contador + 1
+    FinMientras
+FinAlgoritmo
